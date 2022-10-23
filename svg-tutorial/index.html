@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Fundamentala</title>
+  </head>
+  <body>
+    <svg width="960" height="500">
+      <rect
+        x="1"
+        y="1"
+        width="1198"
+        height="308"
+        fill="none"
+        stroke="navy"
+        stroke-width="20"
+      ></rect>
+<!--       x and y are opposite of traditional math -->
+      <circle cx="50" cy="50" r="50"></circle>
+<!--       note that there's no z-index a la CSS, the order of els determines the index -->
+      <circle
+        cx="150"
+        cy="50"
+        r="50"
+        fill="red"
+      ></circle>
+      <line
+        x1="0"
+        y2="100"
+        x2="100"
+        y2="0"
+        stroke-width="20"
+        stroke="blue"
+      ></line>
+      <path d="M400,400L200,300L300,400" stroke="black" fill="none"stroke-width="20"></path>
+<!--       paths are how you make multiline vizs -->
+    </svg>
+  </body>
+</html>
