@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sollewitt</title>
+        <style>
+            body {
+                margin: 0;
+                width: 100%;
+                background: linear-gradient(to left top, blue, red);
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            const width = window.innerWidth
+            const height = window.innerHeight
+
+            const svg = document.createElementNS(
+                'http://www.w3.org/2000/svg',
+                'svg'
+            )
+            svg.setAttribute('width', width)
+            svg.setAttribute('height', height)
+            document.body.appendChild(svg)
+
+            const n = 100
+
+            for (let i = 0; i < n; i++) {
+                const circle = document.createElementNS(
+                    'http://www.w3.org/2000/svg',
+                    'circle'
+                )
+
+                circle.setAttribute('cx', i * 100)
+                circle.setAttribute('cy', i * 50)
+                circle.setAttribute('r', 40)
+                circle.setAttribute('fill', 'black')
+                svg.appendChild(circle)
+            }
+
+            for (let i = 0; i < n; i++) {
+                const circle = document.createElementNS(
+                    'http://www.w3.org/2000/svg',
+                    'circle'
+                )
+
+                circle.setAttribute('cx', i * 95)
+                circle.setAttribute('cy', i * 50)
+                circle.setAttribute('r', 40)
+                circle.setAttribute('fill', 'white')
+                svg.appendChild(circle)
+            }
+        </script>
+    </body>
+</html>
